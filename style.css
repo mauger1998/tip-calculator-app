@@ -21,7 +21,7 @@ body {
   border-radius:20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display:flex;
-  padding:2rem;
+  padding:3rem;
 }
 
 .leftSide {
@@ -35,7 +35,6 @@ body {
 
 .leftFirstContainer > p {
     border:1px solid black;
-    margin-left:10px;
     margin-right: 10px;
     border-radius:5px;
     background-color:hsl(189, 41%, 97%);
@@ -43,9 +42,40 @@ body {
 }
 
 .leftFirstContainer > h3 {
-    margin-left:10px;
     font-size:13px;
     color:hsl(184, 14%, 56%);
     
 }
+
+/*Second Container */
+
+.leftGridContainer {
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.leftGridContainer > h3 {
+    font-size:13px;
+    color:hsl(184, 14%, 56%);
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:10px;
+    padding-right:1rem;
+}
+
+.grid > button {
+    background-color:hsl(183, 100%, 15%);
+    color:white;
+    border:none;
+    border-radius:5px;
+    padding:5px;
+}
+
+#custom {
+    background-color:hsl(189, 41%, 97%);
+    color:hsl(184, 14%, 56%);}
 
