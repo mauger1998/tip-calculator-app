@@ -39,6 +39,10 @@ body {
     border-radius:5px;
     background-color:hsl(189, 41%, 97%);
     border:none;
+    padding:0.5rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .leftFirstContainer > h3 {
@@ -79,3 +83,24 @@ body {
     background-color:hsl(189, 41%, 97%);
     color:hsl(184, 14%, 56%);}
 
+    /*Third Section*/
+
+.leftBottomContainer {
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.leftBottomContainer > h3 {
+    font-size:13px;
+    color:hsl(184, 14%, 56%);;
+}
+
+.leftBottomContainer > p {
+    background-color:hsl(189, 41%, 97%);
+    border-radius:5px;
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding:0.5rem;
+}
