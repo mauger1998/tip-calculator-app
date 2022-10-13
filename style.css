@@ -22,4 +22,9 @@ body {
   border-radius:20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display:flex;
+  padding:1.5rem;
+}
+
+.leftSide {
+    width:50%;
 }
