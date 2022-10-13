@@ -33,16 +33,14 @@ body {
 
 /*First Container*/
 
-.leftFirstContainer > p {
+.leftFirstContainer > input {
     border:1px solid black;
     margin-right: 10px;
     border-radius:5px;
     background-color:hsl(189, 41%, 97%);
     border:none;
     padding:0.5rem;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
+    width:100%;
     color:hsl(183, 100%, 15%);
 }
 
