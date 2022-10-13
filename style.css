@@ -8,9 +8,14 @@
 
 body {
     background-color:hsl(185, 41%, 84%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black;
+    height:100vh;
 }
 
 .mainCard {
   background-color:white;
-  max-width:700px;
+  min-width:700px;
 }
