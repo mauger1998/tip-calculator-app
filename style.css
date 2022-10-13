@@ -11,7 +11,6 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    border:1px solid black;
     height:100vh;
 }
 
@@ -22,9 +21,31 @@ body {
   border-radius:20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   display:flex;
-  padding:1.5rem;
+  padding:2rem;
 }
 
 .leftSide {
     width:50%;
+    display:flex;
+    flex-direction: column;
+    gap:25px;
 }
+
+/*First Container*/
+
+.leftFirstContainer > p {
+    border:1px solid black;
+    margin-left:10px;
+    margin-right: 10px;
+    border-radius:5px;
+    background-color:hsl(189, 41%, 97%);
+    border:none;
+}
+
+.leftFirstContainer > h3 {
+    margin-left:10px;
+    font-size:13px;
+    color:hsl(184, 14%, 56%);
+    
+}
+
