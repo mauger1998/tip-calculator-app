@@ -95,13 +95,11 @@ body {
     color:hsl(184, 14%, 56%);;
 }
 
-.leftBottomContainer > p {
+.leftBottomContainer > input {
     background-color:hsl(189, 41%, 97%);
     border-radius:5px;
-    display:flex;
-    align-items: center;
-    justify-content: flex-end;
     padding:0.5rem;
+    border:none;
 }
 
 /*Right Side*/
