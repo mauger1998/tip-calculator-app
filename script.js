@@ -3,6 +3,14 @@ const billPrice = document.getElementById("billPrice");
 const totalOutput = document.getElementById("total");
 const numberOfPeople = document.getElementById("numberOfPeople");
 const tipOutput = document.getElementById("tipOutput");
+const resetButton = document.getElementById("reset");
+
+
+
+resetButton.addEventListener("click", (e) => {
+    tipOutput.textContent = "";
+    totalOutput.textContent = "";
+});
 
 
 
