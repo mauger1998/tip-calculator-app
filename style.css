@@ -166,6 +166,7 @@ body {
     background-color:hsl(172 67% 46%);
     font-size:15px;
     color:hsl(183, 100%, 15%);
+    width:100%;
 }
 
 #reset:hover {
@@ -203,4 +204,29 @@ button {
 .hover:focus {
     background-color:hsl(172 67% 46%);
 }
+
+#billPrice {
+    background-image: url(images/icon-dollar.svg);
+    background-repeat:no-repeat;
+    background-position: left;
+    text-align:right;
+    background-position-x: 1rem;
+    font-size:1rem
+}
+
+#numberOfPeople {
+    background-image:url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position:left;
+    text-align:right;
+    background-position-x:1rem;
+    font-size:1rem;
+}ß
+
+#custom:hover {
+    cursor:pointer;
+    
+}
+
+
 
