@@ -34,14 +34,15 @@ body {
 /*First Container*/
 
 .leftFirstContainer > input {
-    border:1px solid black;
     margin-right: 10px;
     border-radius:5px;
     background-color:hsl(189, 41%, 97%);
     border:none;
+    outline:none;
     padding:0.5rem;
     width:100%;
     color:hsl(183, 100%, 15%);
+
 }
 
 .leftFirstContainer > h3 {
@@ -221,7 +222,9 @@ button {
     text-align:right;
     background-position-x:1rem;
     font-size:1rem;
-}ß
+    outline:none;
+    
+}
 
 #custom:hover {
     cursor:pointer;
