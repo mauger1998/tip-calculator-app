@@ -5,7 +5,17 @@ const numberOfPeople = document.getElementById("numberOfPeople");
 const tipOutput = document.getElementById("tipOutput");
 const resetButton = document.getElementById("reset");
 const leftBottomContainer = document.querySelector(".leftBottomContainer");
+const customButton = document.getElementById("custom");
 
+
+customButton.addEventListener("keypress", (e) => {
+    if (e.keyCode === 13 && customButton.value > 0) {
+        let amountToAdd = e.target.value;
+        tipOutput.textContent = displayTipAmount(billPrice, amountToAdd, numberOfPeople)
+        totalOutput.textContent = displayTotal(numberOfPeople, billPrice, amountToAdd);
+    }
+    
+})
 
 
 resetButton.addEventListener("click", (e) => {
