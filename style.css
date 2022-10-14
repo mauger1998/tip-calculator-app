@@ -111,4 +111,31 @@ body {
     border-radius:15px;
     background-color:hsl(183, 100%, 15%);
     color:white;
+    padding:1.5rem;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
+    font-size:13px;
+}
+
+#tipOutput {
+    font-size:25px;
+}
+
+#total {
+    font-size:25px;
+}
+
+.rightSideTop {
+    font-size:13px;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+
+}
+
+.rightSideSecond {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
