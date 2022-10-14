@@ -21,13 +21,18 @@ resetButton.addEventListener("click", (e) => {
 
 percentButtons.forEach(button => {
     button.addEventListener("click", (e) => {
+        
         if(numberOfPeople.value <= 0) {
+            numberOfPeople.classList.add("borderAdd");
             let message = document.createElement("p");
             leftBottomContainer.appendChild(message);
             message.textContent = "Amount must be greater than zero!"
             message.classList.add("stop");
+            
 
         } else {
+            numberOfPeople.classList.remove("borderAdd");
+            leftBottomContainer.lastElementChild.textContent = ""
             let amountToAdd = e.target.textContent.slice(0, -1);
             tipOutput.textContent = displayTipAmount(billPrice, amountToAdd, numberOfPeople)
             totalOutput.textContent = displayTotal(numberOfPeople, billPrice, amountToAdd);
