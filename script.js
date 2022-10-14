@@ -20,10 +20,11 @@ percentButtons.forEach(button => {
 
 function displayTotal(numberOfPeople, billPrice, amountToAdd) {
     let result = billPrice.value * parseFloat(`1.${amountToAdd}`) / numberOfPeople.value;
+    let newResult = result.toFixed(2);
 
       
     
-    return result;
+    return newResult;
 }
 
 function displayTipAmount(billPrice, amountToAdd, numberOfPeople) {
