@@ -92,7 +92,8 @@ body {
 
 .leftBottomContainer > h3 {
     font-size:13px;
-    color:hsl(184, 14%, 56%);;
+    color:hsl(184, 14%, 56%);
+    
 }
 
 .leftBottomContainer > input {
@@ -157,4 +158,12 @@ body {
     display:flex;
     align-items: flex-end;
     height:100%;
+}
+
+#perPerson {
+    color:hsl(184, 14%, 56%);
+}
+
+#numberOfPeople {
+    color:hsl(183, 100%, 15%);
 }
