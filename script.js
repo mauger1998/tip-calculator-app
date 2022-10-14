@@ -4,6 +4,7 @@ const totalOutput = document.getElementById("total");
 const numberOfPeople = document.getElementById("numberOfPeople");
 const tipOutput = document.getElementById("tipOutput");
 const resetButton = document.getElementById("reset");
+const leftBottomContainer = document.querySelector(".leftBottomContainer");
 
 
 
@@ -20,9 +21,18 @@ resetButton.addEventListener("click", (e) => {
 
 percentButtons.forEach(button => {
     button.addEventListener("click", (e) => {
-        let amountToAdd = e.target.textContent.slice(0, -1);
-        tipOutput.textContent = displayTipAmount(billPrice, amountToAdd, numberOfPeople)
-        totalOutput.textContent = displayTotal(numberOfPeople, billPrice, amountToAdd);
+        if(numberOfPeople.value <= 0) {
+            let message = document.createElement("p");
+            leftBottomContainer.appendChild(message);
+            message.textContent = "Amount must be greater than zero!"
+            message.classList.add("stop");
+
+        } else {
+            let amountToAdd = e.target.textContent.slice(0, -1);
+            tipOutput.textContent = displayTipAmount(billPrice, amountToAdd, numberOfPeople)
+            totalOutput.textContent = displayTotal(numberOfPeople, billPrice, amountToAdd);
+        }
+        
     })
 })
 
