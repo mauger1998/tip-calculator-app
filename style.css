@@ -139,3 +139,14 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
+#reset{
+    padding:0.5rem 6rem;
+    justify-self: flex-end;
+}
+
+.rightSideButtonContainer {
+    display:flex;
+    align-items: flex-end;
+    height:100%;
+}
